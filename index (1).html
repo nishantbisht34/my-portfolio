@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nishant Bisht - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home" style="display: flex; justify-content: space-between; align-items: center;">
+        <!-- Left Side: Profile Name and Contact Info -->
+        <div class="profile_name">
+          Nishant Bisht
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="email icon"/>
+            nishantbisht330@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="phone icon"/>
+            +1234567890
+          </div>
+        </div>
+
+        <!-- Right Side: Navigation Links -->
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.pinimg.com/736x/b7/b1/38/b7b138495126b90b35855af28716a610.jpg" class="profile_image"/>
+      </div>
+      <div>
+        <h1>
+          Hi, I'm Nishant Bisht! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+        </h1>
+        <p>
+          Hi, I’m Nishant, a passionate web developer and tech enthusiast. I enjoy building interactive, user-friendly websites and exploring the latest in full stack development. I’m currently learning MERN stack and love solving real-world problems through code.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo">
+          <p>HTML5</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo">
+          <p>CSS3</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <ul>
+            <li>A personal portfolio made with HTML, CSS, JS – featuring projects, skills, and contact form.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Weather Forecast App</h3>
+          <ul>
+            <li>Real-time weather data using OpenWeather API with location-based search.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Task Manager App</h3>
+          <ul>
+            <li>A to-do list app with deadlines, priorities, and status filters. Built with React + Firebase.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Nishant is a quick learner and always open to feedback. His dedication to web development is commendable.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Nishant was a great experience. His coding logic is sharp, and he delivers tasks on time.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          His portfolio clearly shows his growth. I admire his attention to detail and curiosity.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Home Icon Button -->
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="html_finalprojimages/home.png" alt="home icon" width="50px"/>
+      </a>
+    </div>
+
+    <!-- Popup Message -->
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for submitting a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
